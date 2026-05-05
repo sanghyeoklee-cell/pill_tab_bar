@@ -1,0 +1,27 @@
+name: pill_tab_bar
+description: A compact sliding pill-style tab bar with smooth animation. Lightweight alternative to TabBar for segmented controls and mode switches.
+version: 0.0.1
+repository: https://github.com/sanghyeoklee-cell/pill_tab_bar
+issue_tracker: https://github.com/sanghyeoklee-cell/pill_tab_bar/issues
+
+topics:
+  - widget
+  - tabs
+  - tab-bar
+  - segmented-control
+  - ui
+
+environment:
+  sdk: ^3.4.0
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:

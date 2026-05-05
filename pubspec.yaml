@@ -1,6 +1,6 @@
 name: pill_tab_bar
 description: A compact sliding pill-style tab bar with smooth animation. Lightweight alternative to TabBar for segmented controls and mode switches.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/sanghyeoklee-cell/pill_tab_bar
 issue_tracker: https://github.com/sanghyeoklee-cell/pill_tab_bar/issues
 
@@ -10,6 +10,12 @@ topics:
   - tab-bar
   - segmented-control
   - ui
+
+screenshots:
+  - description: 'Two-tab pill switcher with a dark selected indicator (Korean labels: 본문 / 스케치북).'
+    path: screenshots/preview_dark.png
+  - description: 'Two-tab pill switcher with a light selected indicator (Chat / Peer).'
+    path: screenshots/preview_light.png
 
 environment:
   sdk: ^3.4.0

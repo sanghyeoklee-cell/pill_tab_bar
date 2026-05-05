@@ -5,6 +5,11 @@ highlighted by a rounded **pill** that smoothly animates between positions —
 a lightweight alternative to `TabBar` for segmented controls, mode switches,
 and small navigation areas.
 
+<p>
+  <img src="screenshots/preview_dark.png" alt="Dark pill preview" width="320">
+  <img src="screenshots/preview_light.png" alt="Light pill preview" width="320">
+</p>
+
 - Sliding pill indicator with customizable curve and duration
 - Two or more tabs
 - Optional leading icons
@@ -16,7 +21,7 @@ and small navigation areas.
 
 ```yaml
 dependencies:
-  pill_tab_bar: ^0.0.1
+  pill_tab_bar: ^0.0.2
 ```
 
 ## Usage

@@ -1,6 +1,6 @@
 name: pill_tab_bar
 description: A compact sliding pill-style tab bar with smooth animation. Lightweight alternative to TabBar for segmented controls and mode switches.
-version: 0.0.2
+version: 0.0.3
 repository: https://github.com/sanghyeoklee-cell/pill_tab_bar
 issue_tracker: https://github.com/sanghyeoklee-cell/pill_tab_bar/issues
 

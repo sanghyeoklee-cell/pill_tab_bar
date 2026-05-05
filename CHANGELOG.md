@@ -1,3 +1,8 @@
+## 0.0.3
+
+* Add `backgroundShadow` parameter — drop shadow under the outer bar
+  (in addition to the existing `pillShadow` for the moving indicator).
+
 ## 0.0.2
 
 * Add screenshots to pub.dev listing (preview_dark, preview_light).

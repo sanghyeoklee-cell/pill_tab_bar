@@ -4,10 +4,10 @@ import 'package:pill_tab_bar/pill_tab_bar.dart';
 
 void main() {
   Widget wrap(Widget child) => MaterialApp(
-    home: Scaffold(
-      body: Center(child: SizedBox(width: 240, child: child)),
-    ),
-  );
+        home: Scaffold(
+          body: Center(child: SizedBox(width: 240, child: child)),
+        ),
+      );
 
   testWidgets('renders all tab labels', (tester) async {
     await tester.pumpWidget(

@@ -98,6 +98,11 @@ class PillTabBar extends StatelessWidget {
   /// Drop shadow under the moving pill. Pass an empty list to disable.
   final List<BoxShadow>? pillShadow;
 
+  /// Drop shadow under the outer bar (the whole tab bar background).
+  ///
+  /// Defaults to no shadow. Pass a list of [BoxShadow] to add elevation.
+  final List<BoxShadow>? backgroundShadow;
+
   /// Creates a sliding pill tab bar. [tabs] must be non-empty and [index]
   /// must be in `[0, tabs.length)`.
   const PillTabBar({
@@ -118,11 +123,12 @@ class PillTabBar extends StatelessWidget {
     this.iconSize = 13,
     this.iconLabelSpacing = 4,
     this.pillShadow,
-  }) : assert(tabs.length > 0, 'tabs must not be empty'),
-       assert(
-         index >= 0 && index < tabs.length,
-         'index must be in [0, tabs.length)',
-       );
+    this.backgroundShadow,
+  })  : assert(tabs.length > 0, 'tabs must not be empty'),
+        assert(
+          index >= 0 && index < tabs.length,
+          'index must be in [0, tabs.length)',
+        );
 
   @override
   Widget build(BuildContext context) {
@@ -136,13 +142,11 @@ class PillTabBar extends StatelessWidget {
         unselectedForeground ?? scheme.onSurface.withValues(alpha: 0.55);
     final resolvedBackground =
         backgroundColor ?? scheme.onSurface.withValues(alpha: 0.06);
-    final resolvedTextStyle =
-        textStyle ??
+    final resolvedTextStyle = textStyle ??
         (theme.textTheme.labelMedium ?? const TextStyle(fontSize: 11)).copyWith(
           fontWeight: FontWeight.w800,
         );
-    final resolvedShadow =
-        pillShadow ??
+    final resolvedShadow = pillShadow ??
         [
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.10),
@@ -163,6 +167,7 @@ class PillTabBar extends StatelessWidget {
             decoration: BoxDecoration(
               color: resolvedBackground,
               borderRadius: radius,
+              boxShadow: backgroundShadow,
             ),
             child: Stack(
               children: [

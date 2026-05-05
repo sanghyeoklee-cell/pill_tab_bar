@@ -21,7 +21,7 @@ and small navigation areas.
 
 ```yaml
 dependencies:
-  pill_tab_bar: ^0.0.2
+  pill_tab_bar: ^0.0.3
 ```
 
 ## Usage
@@ -84,6 +84,7 @@ PillTabBar(
 | `iconSize` | `double` | `13` |
 | `iconLabelSpacing` | `double` | `4` |
 | `pillShadow` | `List<BoxShadow>?` | subtle |
+| `backgroundShadow` | `List<BoxShadow>?` | none |
 
 ## License
 
